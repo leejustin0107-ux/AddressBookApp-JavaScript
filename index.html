@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Address Book</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Address Book</h1>
+    <p class="subtitle">Contact management app using JavaScript.</p>
+
+    <section class="card">
+      <h2>Add Contact</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="tel" id="phone" placeholder="Phone" required />
+        <input type="email" id="email" placeholder="Email" required />
+
+        <input type="text" id="street" placeholder="Street" required />
+        <input type="text" id="state" placeholder="State" required />
+        <input type="text" id="postcode" placeholder="Postcode" required />
+        <textarea id="description" placeholder="Description"></textarea>
+        <button type="submit">Add Contact</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Search Contact</h2>
+      <input type="text" id="searchInput" placeholder="Search by name..." />
+    </section>
+
+    <section class="card">
+      <h2>Contact List</h2>
+      <div id="contactList"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
